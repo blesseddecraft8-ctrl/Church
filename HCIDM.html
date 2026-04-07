@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCIDM Ministries | The Finished Work</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root { --hcid-navy: #2c3e50; --hcid-gold: #d4af37; --hcid-orange: #e67e22; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80');
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: var(--hcid-gold); font-weight: bold; }
+
+        /* Ministry Grid */
+        .ministry-section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--hcid-navy); }
+        .section-title div { width: 60px; height: 4px; background: var(--hcid-orange); margin: 10px auto; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            transition: transform 0.3s ease; 
+            border: 1px solid #eee;
+            text-align: center;
+        }
+        .card:hover { transform: translateY(-10px); border-color: var(--hcid-gold); }
+        .card h3 { color: var(--hcid-navy); margin-bottom: 15px; font-size: 1.5rem; }
+        .card p { color: #666; line-height: 1.6; margin-bottom: 20px; }
+        
+        /* Specific Faith Streams Styling */
+        .faith-streams-card { border-top: 5px solid var(--hcid-orange); }
+
+        .btn-main { 
+            display: inline-block; 
+            padding: 12px 30px; 
+            background: var(--hcid-navy); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold;
+        }
+        .btn-main:hover { background: var(--hcid-orange); }
+
+        /* Navigation Update */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--hcid-navy); font-weight: 600; }
+        .nav-links a:hover { color: var(--hcid-orange); }
+        .nav-special { color: var(--hcid-orange) !important; border: 1px solid var(--hcid-orange); padding: 5px 15px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+  
+  
+
+    <nav class="navbar">
+        <div class="logo" style="font-size: 1.8rem; font-weight: bold; color: var(--hcid-navy);">HCIDM <span style="color: var(--hcid-orange);">Ministries</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#ministries">Ministries</a></li>
+            <li><a href="church.html" class="nav-special">Faith Streams</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<h2>HOLY CROSS INTERNATIONAL DELIVERANCE MINISTRIES</h2>
+    <header class="hero">
+        <div>
+            <h1>The Newness of Life</h1>
+            <p>ESTABLISHED IN RIGHTEOUSNESS | STRENGTHENED IN TRUTH</p>
+        </div>
+    </header>
+
+    <section class="ministry-section" id="ministries">
+        <div class="section-title">
+            <h2>Our Ministries</h2>
+            <div></div>
+            <p>Equipping the saints for the manifestation of His glory.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card faith-streams-card">
+                <div style="font-size: 3rem; margin-bottom: 10px;">🌊</div>
+                <h3>Faith Streams</h3>
+                <p>A life renewing mandate focused on the nourishment of the soul. We provide daily devotions to align your consciousness with the finished work of Christ.</p>
+                <a href="church.html" class="faith streams">Read Devotions</a>
+            </div>
+
+            <div class="card">
+                <div style="font-size: 3rem; margin-bottom: 10px;">📖</div>
+                <h3>Word Academy</h3>
+                <p>Deep theological equipping for those called to the pulpit and ministry leadership, focusing on the revelation of the person of Christ.</p>
+                <a href="#" class="btn-main">Learn More</a>
+            </div>
+
+            <div class="card">
+                <div style="font-size: 3rem; margin-bottom: 10px;">🤝</div>
+                <h3>Impact Reach</h3>
+                <p>Our global outreach initiative, taking the knowledge of truth to the nations through prayer, intercessions, and community support.</p>
+                <a href="#" class="btn-main">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--hcid-navy); color: white; padding: 60px 20px; text-align: center;">
+        <p>&copy; 2026 HCIDM Ministries. All rights reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #bdc3c7;">Christ Jesus in us, the Hope of Glory.</p>
+    </footer>
+
+</body>
+</html>

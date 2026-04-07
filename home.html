@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Word Devotions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-audio" loop>
+  <source src="/church /The_Lily_of_the_Valley_🌸___Classic_Gospel_Hymn_with_Lyrics___Powerful_Christian_Worship_Song(128k).mp3" type="audio/mpeg">
+  
+</audio>
+
+<div id="audio-control" onclick="toggleAudio()" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 1000; background: rgba(44, 62, 80, 0.7); padding: 10px; border-radius: 50%; color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+  <span id="audio-icon">🔇</span>
+</div>
+
+<script>
+  function toggleAudio() {
+    var audio = document.getElementById("bg-audio");
+    var icon = document.getElementById("audio-icon");
+    if (audio.paused) {
+      audio.play();
+      icon.innerHTML = "🔊";
+    } else {
+      audio.pause();
+      icon.innerHTML = "🔇";
+    }
+  }
+</script>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            
+                <li><a href="archive.html">Past Words</a></li>
+                <li><a href="#about">Our Mission</a></li>
+                <li><a href="church.html">CONTACT HCIDM</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1499209974870-113b69488bc0') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.devotion-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.devotion-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.scripture {
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 4px solid #e67e22;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.nugget {
+    background: #fdf2e9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 30px 0;
+    border: 1px dashed #e67e22;
+}
+
+.study h3 {
+    border-bottom: 2px solid #2c3e50;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+    </style>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Newness of Life</h1>
+            <p>Moving from religious effort to the finished work of Christ.</p>
+            <a href="#daily" class="btn">Read Today's Devotion</a>
+        </section>
+
+        <section id="daily" class="devotion-container">
+            <div class="devotion-card">
+                <span class="date">Tuesday, April 7, 2026</span>
+                <h2>Theme: Cast Out Religion</h2>
+                <p class="scripture">"Therefore if any person is [ingrafted] in Christ... the old has passed away. Behold, the fresh and new has come!" — 2 Cor 5:17</p>
+                
+                <div class="content">
+                    <p>What religion did was to capture our consciousness with trying to be instead of the being finished work...</p>
+                    <p>We no longer give to get, we get for it is given and it is ours to take. We give because our Father is a giver.</p>
+                </div>
+
+                <div class="nugget">
+                    <strong>Golden Nugget:</strong> 
+                    Christ Jesus in us, the hope of Glory.
+                </div>
+
+                <div class="study">
+                    <h3>Further Study</h3>
+                    <ul>
+                        <li>Ephesians 2:6-7</li>
+                        <li>Romans 10:4</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FaithStream Devotion Group. Built for the New Creation.</p>
+    </footer>
+
+</body>
+</htm
